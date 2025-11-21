@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Panel Streaming</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body onload="validarLogin(); cargarCuentas(); cargarStock();">
+
+<nav>
+    <h1>Panel Streaming</h1>
+    <button onclick="logout()">Salir</button>
+</nav>
+
+<!-- STOCK GENERAL -->
+<section class="tabla">
+    <h2>📦 Stock de Servicios</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Servicio</th>
+                <th>Stock</th>
+            </tr>
+        </thead>
+        <tbody id="stockBody"></tbody>
+    </table>
+</section>
+
+<!-- FORMULARIO -->
+<section class="form-box">
+    <h2>Agregar Cuenta</h2>
+
+    <input id="servicio" placeholder="Servicio (Netflix, Disney+, etc)">
+    <input id="correo" placeholder="Correo / Usuario">
+    <input id="contra" placeholder="Contraseña">
+    <input id="precio" type="number" placeholder="Precio">
+    <input id="dias" type="number" placeholder="Días">
+    <input id="licencia" placeholder="Licencia única">
+
+    <button onclick="agregarCuenta()">Agregar Cuenta</button>
+</section>
+
+<!-- TABLA CUENTAS -->
+<section class="tabla">
+    <h2>Cuentas agregadas</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Servicio</th>
+                <th>Cuenta</th>
+                <th>Contraseña</th>
+                <th>Precio</th>
+                <th>Días</th>
+                <th>Licencia</th>
+                <th>Eliminar</th>
+            </tr>
+        </thead>
+        <tbody id="tbody"></tbody>
+    </table>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>
