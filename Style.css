@@ -1,0 +1,138 @@
+/* ------- ESTILO VICAZZ PRO (A + D + E) ------- */
+
+:root{
+    --rojo: #ff0000;
+    --rojo2: #c20000;
+    --negro: #0a0a0a;
+    --negro2: #111;
+    --glow: 0 0 15px #ff000080;
+}
+
+body{
+    background: var(--negro);
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+}
+
+/* NAV */
+nav{
+    background: var(--negro2);
+    padding: 15px 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid var(--rojo2);
+    box-shadow: 0 0 15px #ff000020;
+}
+
+nav h1{
+    color: var(--rojo);
+    font-size: 25px;
+    text-shadow: 0 0 10px #ff000055;
+}
+
+/* BOTONES */
+button{
+    background: var(--rojo);
+    border: none;
+    padding: 10px 17px;
+    border-radius: 8px;
+    cursor: pointer;
+    color: #fff;
+    font-weight: bold;
+    transition: 0.2s;
+    box-shadow: 0 0 10px #ff000080;
+}
+button:hover{
+    background: var(--rojo2);
+    transform: scale(1.05);
+}
+
+/* CONTENEDORES */
+.form-box, .tabla{
+    width: 90%;
+    max-width: 650px;
+    margin: 25px auto;
+    background: #0f0f0f;
+    padding: 25px;
+    border-radius: 15px;
+    border: 2px solid #1a1a1a;
+    box-shadow: 0 0 25px #ff000015;
+    backdrop-filter: blur(3px);
+    animation: fadeIn 0.4s ease;
+}
+
+/* TITULOS */
+.form-box h2, .tabla h2{
+    color: var(--rojo);
+    text-shadow: 0 0 10px #ff000055;
+    margin-bottom: 15px;
+}
+
+/* INPUTS */
+input{
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0;
+    background: #151515;
+    border: 2px solid #202020;
+    color: white;
+    border-radius: 8px;
+    transition: 0.2s;
+}
+input:focus{
+    border-color: var(--rojo);
+    box-shadow: var(--glow);
+    outline: none;
+}
+
+/* TABLA */
+table{
+    width: 100%;
+    border-collapse: collapse;
+}
+
+td, th{
+    padding: 12px;
+    background: #121212;
+    border-bottom: 1px solid #1e1e1e;
+}
+
+th{
+    background: #1a1a1a;
+    color: var(--rojo);
+    text-shadow: 0 0 8px #ff000066;
+}
+
+/* LOGIN */
+.login-body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.login-box{
+    background: #101010;
+    padding: 30px;
+    width: 320px;
+    border-radius: 15px;
+    border: 2px solid #1b1b1b;
+    box-shadow: 0 0 25px #ff000025;
+    animation: fadeIn 0.5s ease;
+}
+
+.login-box h2{
+    color: var(--rojo);
+    margin-bottom: 20px;
+    text-shadow: 0 0 10px #ff000060;
+}
+
+#msg{ color:#ff4444; text-align:center; margin-top:10px; }
+
+/* ANIMACIÓN */
+@keyframes fadeIn{
+    from{opacity:0; transform: translateY(10px);}
+    to{opacity:1; transform: translateY(0);}
+}
